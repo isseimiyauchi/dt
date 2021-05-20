@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>電卓</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+   <div class="caluculate">
+    <div class="wrapper">
+      <div id="number-text">0</div>
+    </div>
+    <div class="other-btns">
+      <button id="clear-btn">CLEAR</button>
+      <button id="record-btn" onclick="record()">RECORD</button>
+    </div>
+    <div id="btns">
+      <div id="num-btns">
+        <button onclick="number(7)">7</button>
+        <button onclick="number(8)">8</button>
+        <button onclick="number(9)">9</button>
+        <button onclick="number(4)">4</button>
+        <button onclick="number(5)">5</button>
+        <button onclick="number(6)">6</button>
+        <button onclick="number(1)">1</button>
+        <button onclick="number(2)">2</button>
+        <button onclick="number(3)">3</button>
+        <button id="zero" onclick="zero(0)">0</button>
+        <button name="point" onclick="point('.')">.</button>
+        <button name="equal" onclick="calc('=')">=</button>
+      </div>
+
+      <div id="symbol-btns">
+        <button name="symbol" onclick="calc('/')">/</button>
+        <button name="symbol" onclick="calc('*')">*</button>
+        <button name="symbol" onclick="calc('-')">-</button>
+        <button name="symbol" onclick="calc('+')">+</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript"  src="jquery-3.6.0.min.js" charset="utf-8"></script>
+</body>
+</html>
